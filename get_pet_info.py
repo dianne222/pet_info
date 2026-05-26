@@ -11,3 +11,10 @@ def store_pet_info():
     pet1.set_name(name)
     pet1.set_animal_type(animal_type)
     pet1.set_age(age)
+
+def display_pet_info():
+    print("Pet Information")
+    print("Name:", pet1.get_name())
+    print("Animal Type:", pet1.get_animal_type())
+    print("Age:", pet1.get_age())
+    print("")
