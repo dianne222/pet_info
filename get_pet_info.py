@@ -6,6 +6,7 @@ def get_pet_info():
     name = input("Enter your's pet name:")
     animal_type = input("Enter your animal's type:")
     age = int(input("Enter your age:"))
+    return name, animal_type, age
 
 def store_pet_info(name, animal_type, age):
     pet1.set_name(name)
@@ -19,6 +20,6 @@ def display_pet_info():
     print("Age:", pet1.get_age())
     print("")
 
-get_pet_info()
-store_pet_info()
+name, animal_type, age = get_pet_info()
+store_pet_info(name, animal_type, age)
 display_pet_info()
